@@ -1,0 +1,34 @@
+---
+- summery: |
+    Успешная регистрация через GitHub
+  requirement: |
+    Пользователь должен иметь возможность зарегистрироваться через учетную запись GitHub
+  prerequisites: |
+    Пользователь зарегистрирован на github.com
+  test-data: |
+    Нет данных
+  step: |
+    - Открыть страницу регистрации Sign Up
+    - Выбрать Sign in with Github
+  expected-result: |
+    Авторизация пользователя успешна
+
+- summery: |
+    Успешная регистрация через e-mail
+  requirement: |
+    Пользователь должен иметь возможность зарегистрироваться через e-mail
+  prerequisites: |
+    Пользователь имеет зарегистрированную электронную почту 
+  test-data: |
+    Нет данных
+  step: |
+    - Открыть страницу регистрации Sign Up
+    - Ввести Nickname, например "Hakuna_Matata23"
+    - Ввести Email, например valmur83mail.ru
+    - Вести Password, например uurwq6Hm@Z.GHBN
+    - Ввести Password Confirmation
+    - Нажать на кнопку Submit
+  expected-result: |
+    Пользователь успешно зарегистрирован
+  
+  
