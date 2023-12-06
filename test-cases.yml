@@ -1,5 +1,5 @@
 ---
-- summery: |
+- summary: |
     Успешная регистрация через GitHub
   requirement: |
     Пользователь должен иметь возможность зарегистрироваться через учетную запись GitHub
@@ -11,9 +11,9 @@
     - Открыть страницу регистрации Sign Up
     - Выбрать Sign in with Github
   expected-result: |
-    Авторизация пользователя успешна
+    Пользователь успешно зарегистрирован
 
-- summery: |
+- summary: |
     Успешная регистрация через e-mail
   requirement: |
     Пользователь должен иметь возможность зарегистрироваться через e-mail
@@ -24,11 +24,89 @@
   step: |
     - Открыть страницу регистрации Sign Up
     - Ввести Nickname, например "Hakuna_Matata23"
-    - Ввести Email, например valmur83mail.ru
+    - Ввести Email, например valmur83@mail.ru
     - Вести Password, например uurwq6Hm@Z.GHBN
     - Ввести Password Confirmation
     - Нажать на кнопку Submit
   expected-result: |
     Пользователь успешно зарегистрирован
+
+- summary: |
+    Успешная авторизация через электронную почту
+  requirement: | 
+    Пользователь должен иметь возможность авторизоваться через e-mail
+  prerequisites: |
+    Пользователь имеет зарегистрированную электронную почту 
+  test-data: |
+    Нет данных
+  step: |
+    - Открыть страницу авторизации Sign In
+    - Ввести Email, например valmur83@mail.ru
+    - Вести Password, например uurwq6Hm@Z.GHBN
+    - Нажать на кнопку Submit
+  expected-result: |
+    Пользователь успешно авторизован
   
-  
+- summary: |
+    Успешная авторизация через GitHub
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться через GitHub
+  prerequisites: |
+    Пользователь зарегистрирован на github.com
+  test-data: |
+    Нет данных
+  step: |
+    - Открыть страницу авторизации Sign In
+    - Выбрать Sign in with Github
+  expected-result: |
+    Пользователь успешно авторизован
+
+- summary: |
+    Успешная авторизация через Discord
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться через Discord
+  prerequisites: |
+    Пользователь зарегистрирован в Discord
+  test-data: |
+    Нет данных
+  step: |
+    - Открыть страницу авторизации Sign In
+    - Выбрать Sign in with Discord
+    - Открывается страница разрешения авторизации через Discord
+    - Нажать на кнопку "Авторизовать"
+  expected-result: |
+    Пользователь успешно авторизован
+
+- summary: |
+    Проверка неуспешной регистрации с уже сеществующим именем пользователя
+  requirement: |
+    Пользователь не должен иметь возможность зарегистрироваться с уже зарегистрированным именем пользователя
+  prerequisites: |
+    Открыта страница регистрации Sign Up
+  test-data: |
+    Нет данных
+  step: |
+    - Ввести Nickname, например "Hakuna_Matata23"
+    - Ввести Email, например ivanov@mail.ru
+    - Вести Password, например 123africa
+    - Ввести Password Confirmation
+    - Нажать на кнопку Submit
+  expected-result: |
+    Пользователь видит ошибку "Nickname is already taken" под полем "Nickname"
+
+- summary: |
+    Проверка регистрации с некорректным адресом электронной почты
+  requirement: |
+    Пользователь не может зарегистрироваться с некорректным адресом электронной почты
+  prerequisites: |
+    Открыта страница регистрации Sign Up
+  test-data: |
+    Нет данных
+  step: |
+    - Ввести Nickname, например "Fakir"
+    - Ввести Email, например ivanov@maul.ru
+    - Вести Password, например fakir01
+    - Ввести Password Confirmation
+    - Нажать на кнопку Submit
+  expected-result: |
+    Пользователь видит ошибку "Invalid email"
