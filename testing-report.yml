@@ -1,0 +1,52 @@
+---
+- summary: |
+    Успешная регистрация через GitHub
+  status: pass
+
+- summary: |
+    Успешная регистрация через e-mail
+  status: pass
+
+- summary: |
+    Успешная авторизация через электронную почту
+  status: pass
+
+- summary: |
+    Успешная авторизация через GitHub
+  status: pass
+
+- summary: |
+    Успешная авторизация через Discord
+  status: pass
+
+- summary: |
+    Проверка неуспешной регистрации с уже сеществующим именем пользователя
+  status: pass
+
+- summary: |
+    Проверка регистрации с некорректным адресом электронной почты
+  status: fail
+
+- summary: |
+    Проверка создания игры без регистрации
+  status: pass
+
+- summary: |
+    Создание игры
+  status: pass
+
+- summary: |
+    Проверка на создание игры против бота
+  status: pass
+  
+- summary: |
+    Проверка победы в игре над ботом
+  status: pass
+
+- summary: |
+    Проверка поражения в игре с ботом
+  status: pass
+
+- summary: |
+    Пользователь должен иметь возможность создать игру против друга
+  status: pass
