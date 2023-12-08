@@ -103,7 +103,7 @@
   test-data: |
     Нет данных
   step: |
-    - Ввести Nickname, например "Fakir"
+    - Ввести Nickname, например "Hot_pepper"
     - Ввести Email, например ivanov@maul.ru
     - Вести Password, например fakir01
     - Ввести Password Confirmation
