@@ -119,7 +119,7 @@
     Пользователь находится на главной странице
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "TRY SIMPLE BATTLE"
   expected-result: |
     Начнется новая игра
