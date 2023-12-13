@@ -7,7 +7,7 @@
     Пользователь зарегистрирован на github.com
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Открыть страницу регистрации Sign Up
     - Выбрать Sign in with Github
   expected-result: |
@@ -21,7 +21,7 @@
     Пользователь имеет зарегистрированную электронную почту 
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Открыть страницу регистрации Sign Up
     - Ввести Nickname, например "Hakuna_Matata23"
     - Ввести Email, например valmur83@mail.ru
@@ -39,7 +39,7 @@
     Пользователь имеет зарегистрированную электронную почту 
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Открыть страницу авторизации Sign In
     - Ввести Email, например valmur83@mail.ru
     - Вести Password, например uurwq6Hm@Z.GHBN
@@ -55,7 +55,7 @@
     Пользователь зарегистрирован на github.com
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Открыть страницу авторизации Sign In
     - Выбрать Sign in with Github
   expected-result: |
@@ -69,7 +69,7 @@
     Пользователь зарегистрирован в Discord
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Открыть страницу авторизации Sign In
     - Выбрать Sign in with Discord
     - Открывается страница разрешения авторизации через Discord
@@ -85,7 +85,7 @@
     Открыта страница регистрации Sign Up
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Ввести Nickname, например "Hakuna_Matata23"
     - Ввести Email, например ivanov@mail.ru
     - Вести Password, например 123africa
@@ -102,7 +102,7 @@
     Открыта страница регистрации Sign Up
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Ввести Nickname, например "Hot_pepper"
     - Ввести Email, например ivanov@maul.ru
     - Вести Password, например fakir01
@@ -132,7 +132,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "Game Type"
@@ -150,7 +150,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "With a bot"
@@ -168,7 +168,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "With a bot"
@@ -193,7 +193,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "With a bot"
@@ -212,7 +212,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "With a friend"
@@ -231,7 +231,7 @@
     Пользователь находится в лобби
   test-data: |
     Нет данных
-  steps: |
+  steps:
     - Нажать кнопку "CREATE A GAME"
     - Выбрать уровень сложности "Level"
     - Выбрать тип игры "With a bot"
