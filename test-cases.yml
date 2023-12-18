@@ -104,7 +104,7 @@
     Нет данных
   steps:
     - Ввести Nickname, например "Hot_pepper"
-    - Ввести Email, например ivanov@maul.ru
+    - Ввести Email, например ivanov@mail
     - Вести Password, например fakir01
     - Ввести Password Confirmation
     - Нажать на кнопку Submit
