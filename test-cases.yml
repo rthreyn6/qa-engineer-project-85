@@ -240,3 +240,25 @@
     - Нажать на кнопку "Create battle"
   expected-result: |
     Пользователь видит таймер, который начинается с 00:08:00
+
+- summary: |
+    Проверка возможности создания турнира
+  requirement: |
+    Пользователь должен иметь возможность создать турнир
+  prerequisites: |
+    Пользователь авторизован и находится в лобби
+  test-data: |
+    Name = Wink
+    Type = individual
+    Description = Markdown description. [stream_link](https://codebattle.hexlet.io)
+    Starts at = 19.12.2023 09:00, Access type = public, Task strategy = game
+    Task provider = level, Level = elementary
+    Players limit = 64, Default language = js, Match timeout seconds = 177, Break duration seconds = 42
+  steps:
+    - Перейти на вкладку "Tournaments"
+    - Нажать на ссылку "Tournaments Info"
+    - Пролистать страницу вниз до раздела "Create a new tournament"
+    - Ввести параметры из test-data
+    - Нажать на кнопку "Create"
+  expected-result: |
+    Открывается страница с созданным турниром
