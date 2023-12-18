@@ -255,10 +255,25 @@
     Task provider = level, Level = elementary
     Players limit = 64, Default language = js, Match timeout seconds = 177, Break duration seconds = 42
   steps:
-    - Перейти на вкладку "Tournaments"
+    - Перейти на вкладку "TOURNAMENTS"
     - Нажать на ссылку "Tournaments Info"
     - Пролистать страницу вниз до раздела "Create a new tournament"
     - Ввести параметры из test-data
     - Нажать на кнопку "Create"
   expected-result: |
     Открывается страница с созданным турниром
+
+- summary: |
+    Проверка возможности просмотра завершенных игр
+  requirement: |
+    Пользователь должен иметь возможность просматриваться завершенные игры
+  prerequisites: |
+    Пользователь авторизован и находится в лобби
+  test-data: |
+    Нет данных
+  steps:
+    - Перейти на вкладку "COMPLETED GAMES"
+    - Нажать на кнопку "Show" напротив завершенной игры
+    - Нажать на кнопку "Play" внизу страницы
+  expected-result: |
+    Начинает воспроизводиться запись игры
